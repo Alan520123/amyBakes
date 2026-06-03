@@ -1,0 +1,46 @@
+[    
+    {
+        "id": "Cakes",
+        "name": "Cakes",
+        "description": "Our delicious cakes for every occasion",
+        "showcaseImages": [
+            "/images/Cakes/onDisplay/2E77FE51-3661-411E-840E-EB261DB193E4.jpg",
+            "/images/Cakes/onDisplay/816D2A2C-B6FA-4461-93CD-3FAF32D66728.jpg",
+            "/images/Cakes/onDisplay/7878703757579059816.jpg",
+            "/images/Cakes/onDisplay/B450C35F-9D1F-4D65-93AE-22ECE91064B3.jpg"
+        ]
+    },
+    {
+        "id": "Cookies",
+        "name": "Cookies",
+        "description": "Freshly baked cookies, perfect for any time of day",
+        "showcaseImages": [
+            "/images/Cookies/onDisplay/FBB60673-5733-4A72-A263-2ABEC14973DA.jpg",
+            "/images/Cookies/onDisplay/IMG_1207.jpg",
+            "/images/Cookies/onDisplay/IMG_5047.jpg",
+            "/images/Cookies/onDisplay/IMG_5062.jpg"
+        ]
+    },
+    {
+        "id": "Cupcakes",
+        "name": "Cupcakes",
+        "description": "Delicious cupcakes for any celebration",
+        "showcaseImages": [
+            "/images/Cupcakes/onDisplay/IMG_1850.jpg",
+            "/images/Cupcakes/onDisplay/IMG_2520-2.jpg",
+            "/images/Cupcakes/onDisplay/IMG_2737.jpg",
+            "/images/Cupcakes/onDisplay/IMG_4245.jpg"
+        ]
+    },
+    {
+        "id": "Other",
+        "name": "Other",
+        "description": "Our other delicious treats, perfect for any occasion",
+        "showcaseImages": [
+            "/images/Other/onDisplay/IMG_1066.jpg",
+            "/images/Other/onDisplay/IMG_1130.jpg",
+            "/images/Other/onDisplay/IMG_3984.jpg",
+            "/images/Other/onDisplay/IMG_4520.jpg"
+        ]
+    }
+]
