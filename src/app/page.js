@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import styles from "./page.module.css";
+import sections from "./sections.json";
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -82,79 +85,54 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.menu} id="menu">
-          <div className={styles.sectionHeader}>
-            <p className={styles.sectionLabel}>Featured</p>
-            <h2>Sweet treats for every occasion</h2>
-          </div>
-          <div className={styles.cards}>
-            <article className={styles.featureCard}>
-              <h3>Cupcakes</h3>
-              <p>
-                Perfectly portioned cupcakes in playful flavors like vanilla bean,
-                red velvet, and salted caramel.
-              </p>
-            </article>
-            <article className={styles.featureCard}>
-              <h3>Celebration Cakes</h3>
-              <p>
-                Custom-designed cakes for birthdays, showers, weddings, and
-                anytime you want a show-stopping centerpiece.
-              </p>
-            </article>
-            <article className={styles.featureCard}>
-              <h3>Sourdough</h3>
-              <p>
-                Tangy, crusty loaves made with care and slow fermentation for
-                rich flavor and texture.
-              </p>
-            </article>
-            <article className={styles.featureCard}>
-              <h3>Cookies</h3>
-              <p>
-                Soft-baked cookies in classic favorites like chocolate chip,
-                oatmeal, and seasonal specialties.
-              </p>
-            </article>
-          </div>
-        </section>
+        {/* Dynamically render sections from JSON data */}
+        {sections.map((section) => (
+          <section key={section.id} id={section.id} className={styles.section}>
+            <h2>{section.name}</h2>
+            <p>{section.description}</p>
+            <div className={styles.sectionMedia}>
+              <Carousel
+                additionalTransfrom={0}
+                arrows
+                autoPlay={false}
+                centerMode={false}
+                containerClass="carousel-container"
+                draggable
+                infinite={false}
+                keyBoardControl
+                minimumTouchDrag={80}
+                itemClass="carousel-item"
+                responsive={{
+                  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3, partialVisibilityGutter: 40 },
+                  tablet: { breakpoint: { max: 1024, min: 464 }, items: 2, partialVisibilityGutter: 30 },
+                  mobile: { breakpoint: { max: 464, min: 0 }, items: 1, partialVisibilityGutter: 30 }
+                }}
+                showDots={true}
+                ssr
+                swipeable
+              >
+                {section.showcaseImages.map((mediaItem, index) => (
+                  <div key={index} className={styles.sectionMediaItem}>
+                    <Image
+                      src={mediaItem}
+                      alt={`${section.name} showcase ${index + 1}`}
+                      fill
+                      className={styles.sectionImage}
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                    />
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+            <button className={styles.sectionButton}>View {section.name}</button>
+          </section>
+          ))
+        }
 
-        <section className={styles.info}>
-          <div>
-            <h2>Handcrafted bakery favorites</h2>
-            <p>
-              Amy Bakes brings local charm to every batch. Whether you want a
-              morning loaf, a party cake, or a tray of sweet treats, everything
-              is made with seasonal ingredients and a passion for flavor.
-            </p>
-          </div>
-          <div className={styles.benefits}>
-            <article className={styles.benefitItem}>
-              <h3>Small-batch quality</h3>
-              <p>Each order is baked fresh with extra attention to detail.</p>
-            </article>
-            <article className={styles.benefitItem}>
-              <h3>Custom orders</h3>
-              <p>Personalized cakes and dessert boxes for every celebration.</p>
-            </article>
-            <article className={styles.benefitItem}>
-              <h3>Local delivery</h3>
-              <p>Easy pickup and delivery options inside the neighborhood.</p>
-            </article>
-          </div>
-        </section>
-
-        <section className={styles.contact} id="contact">
-          <div className={styles.contactCard}>
-            <h2>Ready to place an order?</h2>
-            <p>
-              Send a message to reserve cupcakes, cake designs, or a fresh loaf
-              for the week.
-            </p>
-            <a className={styles.primary} href="mailto:hello@amy-bakes.com">
-              Contact Amy
-            </a>
-          </div>
+        <section id="contact" className={styles.contactSection}>
+          <h2>Contact Us</h2>
+          <p>Have questions or want to book a tasting? Get in touch!</p>
+          <button className={styles.contactButton}>Contact Amy!</button>
         </section>
       </main>
     </div>

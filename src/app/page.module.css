@@ -14,7 +14,10 @@
   padding: 64px 40px;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 80px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
 }
 
 .hero {
@@ -233,6 +236,158 @@ a.secondary {
   font-size: 1rem;
 }
 
+/* Section styles */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  scroll-margin-top: 80px;
+  padding: 48px 40px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255, 250, 247, 0.8) 0%, rgba(255, 245, 240, 0.6) 100%);
+  border: 1px solid rgba(215, 107, 157, 0.12);
+  box-shadow: 0 8px 24px rgba(215, 107, 157, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.section h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.05;
+  background: linear-gradient(135deg, #d76b9d 0%, #b05a73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.section > p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #575757;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* Carousel and media styles */
+.sectionMedia {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.sectionMediaItem {
+  position: relative;
+  min-height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 12px;
+  box-shadow: 0 12px 32px rgba(215, 107, 157, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f9f5f8;
+}
+
+.sectionMediaItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(215, 107, 157, 0.25);
+}
+
+.sectionImage {
+  object-fit: cover;
+}
+
+.sectionButton {
+  align-self: flex-start;
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #d76b9d 0%, #b05a73 100%);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(215, 107, 157, 0.24);
+  letter-spacing: 0.02em;
+}
+
+.sectionButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(215, 107, 157, 0.35);
+}
+
+.sectionButton:active {
+  transform: translateY(0);
+}
+
+/* Carousel controls styling */
+.carousel-container {
+  padding: 12px 0 32px 0;
+  position: relative;
+}
+
+.react-multi-carousel-list {
+  overflow: visible;
+  padding: 0;
+}
+
+.react-multi-carousel-dot-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.react-multi-carousel-dot button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e6c5d6;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.react-multi-carousel-dot--active button {
+  background: #d76b9d;
+  width: 32px;
+  border-radius: 6px;
+}
+
+/* Custom arrow styling */
+.react-multi-carousel-item {
+  padding: 0;
+}
+
+.react-multi-carousel__arrow {
+  background: rgba(215, 107, 157, 0.85);
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.react-multi-carousel__arrow:hover {
+  background: rgba(215, 107, 157, 1);
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(215, 107, 157, 0.3);
+}
+
+.react-multi-carousel__arrow--left {
+  left: -20px;
+}
+
+.react-multi-carousel__arrow--right {
+  right: -20px;
+}
+
 .gallery {
   display: flex;
   flex-direction: column;
@@ -255,6 +410,62 @@ a.secondary {
 
 .galleryImage {
   object-fit: cover;
+}
+
+/* Contact section styles */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(215, 107, 157, 0.08) 0%, rgba(180, 90, 115, 0.08) 100%);
+  border: 1px solid rgba(215, 107, 157, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.contactSection h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  background: linear-gradient(135deg, #d76b9d 0%, #b05a73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.contactSection p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #575757;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.contactButton {
+  padding: 16px 40px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #d76b9d 0%, #b05a73 100%);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 32px rgba(215, 107, 157, 0.28);
+  letter-spacing: 0.02em;
+  margin-top: 12px;
+}
+
+.contactButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px rgba(215, 107, 157, 0.4);
+}
+
+.contactButton:active {
+  transform: translateY(-1px);
 }
 
 .testimonials {
@@ -302,10 +513,31 @@ a.secondary {
     grid-template-columns: 1fr;
   }
 
+  .react-multi-carousel__arrow--left {
+    left: -12px;
+  }
+
+  .react-multi-carousel__arrow--right {
+    right: -12px;
+  }
+
+  .section {
+    gap: 24px;
+    padding: 40px 32px;
+  }
+
+  .sectionMediaItem {
+    min-height: 240px;
+  }
+
   .highlightGrid,
   .testimonialGrid,
   .galleryGrid {
     grid-template-columns: 1fr;
+  }
+
+  .contactSection {
+    padding: 40px 30px;
   }
 }
 
@@ -330,6 +562,71 @@ a.secondary {
   .highlightCard p,
   .testimonialQuote {
     font-size: 0.98rem;
+  }
+
+  .main {
+    padding: 40px 20px;
+    gap: 60px;
+  }
+
+  .section {
+    padding: 28px 20px;
+    gap: 20px;
+    border-radius: 20px;
+  }
+
+  .section h2 {
+    font-size: clamp(1.6rem, 5vw, 2rem);
+  }
+
+  .section > p {
+    font-size: 0.95rem;
+  }
+
+  .sectionMediaItem {
+    min-height: 180px;
+    margin: 0 8px;
+    border-radius: 16px;
+  }
+
+  .sectionButton {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .react-multi-carousel__arrow {
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 16px;
+  }
+
+  .react-multi-carousel__arrow--left {
+    left: 0;
+  }
+
+  .react-multi-carousel__arrow--right {
+    right: 0;
+  }
+
+  .contactSection {
+    padding: 30px 20px;
+    gap: 16px;
+  }
+
+  .contactSection h2 {
+    font-size: 1.6rem;
+  }
+
+  .contactSection p {
+    font-size: 0.95rem;
+  }
+
+  .contactButton {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 1rem;
   }
 }
 
