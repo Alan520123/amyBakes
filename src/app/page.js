@@ -27,7 +27,7 @@ export default function Home() {
         <div className={`${styles.splashOverlay} ${splashExit ? styles.splashOverlayExit : ""}`}>
           <div className={styles.splashImageWrapper}>
             <Image
-              src="/images/AmyBakesCard.jpg"
+              src="/images/AmyBakesMainLogo.jpg"
               alt="Amy Bakes bakery treats"
               fill
               className={styles.splashBgImage}
@@ -38,13 +38,15 @@ export default function Home() {
           <div className={styles.splashTint} />
 
           <div className={styles.splashContent}>
-            <span className={styles.splashBadge}>Fresh. Sweet. Handmade.</span>
+
             <div className={styles.splashLogo}>
               <span className={styles.splashLogoMark}>Amy</span>
               <span className={styles.splashFlourish} />
               <span className={styles.splashFlourishTail} />
               <span className={styles.splashLogoText}>Bakes</span>
+              <span className={styles.splashBadge}>Pastries & Desserts</span>
             </div>
+            
             <p>Warm bakery treats and custom cakes baked from scratch for every celebration.</p>
           </div>
 
@@ -60,7 +62,7 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroMedia}>
             <Image
-              src="/images/AmyBakesCard.jpg"
+              src="/images/AmyBakesMainLogo.jpg"
               alt="Amy Bakes bakery display"
               fill
               className={styles.heroImage}
@@ -68,8 +70,8 @@ export default function Home() {
             />
           </div>
           <div className={styles.heroCopy}>
-            <p className={styles.tagline}>Fresh. Sweet. Handmade.</p>
             <h1>Amy Bakes</h1>
+            <p className={styles.tagline}>Pastries & Desserts</p>
             <p className={styles.lead}>
               A cozy bakery for cupcakes, celebration cakes, artisan sourdough,
               and cookies baked from scratch.
@@ -77,9 +79,6 @@ export default function Home() {
             <div className={styles.ctas}>
               <a className={styles.primary} href="#menu">
                 Explore the menu
-              </a>
-              <a className={styles.secondary} href="#contact">
-                Book a tasting
               </a>
             </div>
           </div>
