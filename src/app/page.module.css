@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 .page {
   min-height: 100vh;
   width: 100%;
@@ -639,12 +641,14 @@ a.secondary {
   justify-content: center;
   padding: 0 20px;
   overflow: hidden;
+  background: #f4e4d0;
 }
 
 .splashImageWrapper {
   position: absolute;
   inset: 0;
   overflow: hidden;
+  display: none;
 }
 
 .splashBgImage {
@@ -656,7 +660,7 @@ a.secondary {
 .splashTint {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 245, 238, 0.72), rgba(255, 225, 218, 0.82) 30%, rgba(204, 80, 98, 0.24));
+  background: transparent;
 }
 
 .splashOverlay::before {
@@ -710,10 +714,10 @@ a.secondary {
   display: block;
   width: 4.8rem;
   height: 0.18rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.22));
+  background: linear-gradient(90deg, rgba(183, 31, 34, 0.96), rgba(255, 239, 226, 0.24));
   border-radius: 999px;
   transform: translateY(-0.24rem) rotate(-8deg) scaleX(0);
-  opacity: 0.95;
+  opacity: 0.98;
   transform-origin: left center;
   animation: flourishDraw 0.72s ease-out 0.52s forwards;
 }
@@ -723,10 +727,10 @@ a.secondary {
   width: 3.4rem;
   height: 0.16rem;
   margin-top: -0.06rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.18));
+  background: linear-gradient(90deg, rgba(183, 31, 34, 0.9), rgba(255, 239, 226, 0.4));
   border-radius: 999px;
   transform: translateX(22%) translateY(-0.55rem) rotate(14deg) scaleX(0);
-  opacity: 0.88;
+  opacity: 0.92;
   transform-origin: left center;
   animation: flourishTail 0.88s ease-out 0.94s forwards;
 }
@@ -738,7 +742,7 @@ a.secondary {
   top: 0.05rem;
   width: 0.85rem;
   height: 0.12rem;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 239, 226, 0.95);
   border-radius: 999px;
   opacity: 0;
   transform: translateX(-10%) rotate(-18deg) scaleX(0);
@@ -746,50 +750,37 @@ a.secondary {
 }
 
 .splashLogoMark {
-  font-family: "Segoe Script", "Brush Script MT", "Dancing Script", cursive;
-  font-size: clamp(4.4rem, 9vw, 6rem);
-  line-height: 0.88;
-  letter-spacing: -0.08em;
-  color: #fff;
-  text-shadow: 0 18px 40px rgba(84, 24, 42, 0.24), 0 0 24px rgba(255, 255, 255, 0.08);
-  transform: translateY(36px) rotate(-0.5deg);
+  font-family: "Dancing Script", "Segoe Script", "Brush Script MT", cursive;
+  font-size: clamp(4.2rem, 9vw, 5.6rem);
+  line-height: 0.86;
+  letter-spacing: -0.06em;
+  color: #b71f22;
+  text-shadow: 0 10px 20px rgba(108, 29, 34, 0.18);
+  transform: translateY(24px) rotate(-0.5deg);
   opacity: 0;
   animation: splashTitle 0.74s ease-out 0.3s forwards;
 }
 
 .splashLogoText {
-  font-family: "Segoe Script", "Brush Script MT", cursive;
-  font-size: 1.45rem;
-  color: rgba(255, 239, 226, 0.95);
-  text-transform: none;
-  letter-spacing: 0.04em;
-  font-weight: 600;
-  font-style: italic;
-  transform: translateY(34px) rotate(0.5deg);
+  font-family: "Dancing Script", "Segoe Script", "Brush Script MT", cursive;
+  font-size: clamp(3rem, 6vw, 4.6rem);
+  color: #b71f22;
+  letter-spacing: -0.02em;
+  line-height: 0.94;
+  transform: translateY(30px) rotate(0.5deg);
   opacity: 0;
   animation: splashTitle 0.7s ease-out 0.45s forwards;
 }
 
 .splashLogoMark,
 .splashLogoText {
-  text-shadow: 0 10px 16px rgba(137, 54, 74, 0.18);
+  text-shadow: 0 8px 18px rgba(108, 29, 34, 0.18);
 }
 
 .splashContent p {
   margin: 24px auto 0;
   max-width: 30rem;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 1rem;
-  line-height: 1.8;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: splashCopy 0.7s ease-out 0.7s forwards;
-}
-
-.splashContent p {
-  margin: 24px auto 0;
-  max-width: 30rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #b71f22;
   font-size: 1rem;
   line-height: 1.8;
   opacity: 0;
