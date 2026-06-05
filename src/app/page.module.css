@@ -711,18 +711,6 @@ a.secondary {
   position: relative;
 }
 
-.splashFlourish {
-  display: none;
-}
-
-.splashFlourishTail {
-  display: none;
-}
-
-.splashFlourishTail::after {
-  display: none;
-}
-
 .splashLogoMark {
   font-family: "Dancing Script", "Segoe Script", "Brush Script MT", cursive;
   font-size: clamp(4.2rem, 9vw, 5.6rem);
