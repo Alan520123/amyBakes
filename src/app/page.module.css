@@ -6,8 +6,8 @@
   background: #fffdf9;
   display: flex;
   justify-content: center;
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
-  color: #1b1b1b;
+  font-family: "Dancing Script", "Segoe Script", "Brush Script MT", cursive;
+  color: #b71f22;
 }
 
 .main {
@@ -81,12 +81,13 @@ a.primary,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #d76b9d;
+  background: #b71f22;
   color: #ffffff;
   text-decoration: none;
   padding: 14px 26px;
   border-radius: 999px;
   border: 1px solid transparent;
+  font-family: "Dancing Script", "Segoe Script", "Brush Script MT", cursive;
   font-weight: 700;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -94,19 +95,20 @@ a.primary,
 a.primary:hover,
 .contactCard a:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 28px rgba(215, 107, 157, 0.24);
+  box-shadow: 0 14px 28px rgba(183, 31, 34, 0.24);
 }
 
 a.secondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #d76b9d;
+  color: #b71f22;
   text-decoration: none;
   padding: 14px 26px;
   border-radius: 999px;
-  border: 1px solid #d76b9d;
+  border: 1px solid #b71f22;
   background: transparent;
+  font-family: "Dancing Script", "Segoe Script", "Brush Script MT", cursive;
   font-weight: 700;
 }
 
@@ -254,19 +256,16 @@ a.secondary {
 
 .section h2 {
   margin: 0;
-  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
   line-height: 1.05;
-  background: linear-gradient(135deg, #d76b9d 0%, #b05a73 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #b71f22;
   font-weight: 800;
 }
 
 .section > p {
   margin: 0;
-  font-size: 1.05rem;
-  color: #575757;
+  font-size: 1.35rem;
+  color: #b71f22;
   line-height: 1.7;
   max-width: 600px;
 }
@@ -299,22 +298,23 @@ a.secondary {
 
 .sectionButton {
   align-self: flex-start;
-  padding: 14px 32px;
+  padding: 16px 40px;
   border-radius: 999px;
   border: none;
-  background: linear-gradient(135deg, #d76b9d 0%, #b05a73 100%);
+  background: linear-gradient(135deg, #b71f22 0%, #8b1618 100%);
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: "Dancing Script", "Segoe Script", "Brush Script MT", cursive;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(215, 107, 157, 0.24);
+  box-shadow: 0 8px 24px rgba(183, 31, 34, 0.24);
   letter-spacing: 0.02em;
 }
 
 .sectionButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 36px rgba(215, 107, 157, 0.35);
+  box-shadow: 0 12px 36px rgba(183, 31, 34, 0.35);
 }
 
 .sectionButton:active {
@@ -450,20 +450,21 @@ a.secondary {
   padding: 16px 40px;
   border-radius: 999px;
   border: none;
-  background: linear-gradient(135deg, #d76b9d 0%, #b05a73 100%);
+  background: linear-gradient(135deg, #b71f22 0%, #8b1618 100%);
   color: #ffffff;
   font-size: 1.05rem;
+  font-family: "Dancing Script", "Segoe Script", "Brush Script MT", cursive;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 12px 32px rgba(215, 107, 157, 0.28);
+  box-shadow: 0 12px 32px rgba(183, 31, 34, 0.28);
   letter-spacing: 0.02em;
   margin-top: 12px;
 }
 
 .contactButton:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 48px rgba(215, 107, 157, 0.4);
+  box-shadow: 0 16px 48px rgba(183, 31, 34, 0.4);
 }
 
 .contactButton:active {
@@ -711,42 +712,15 @@ a.secondary {
 }
 
 .splashFlourish {
-  display: block;
-  width: 4.8rem;
-  height: 0.18rem;
-  background: linear-gradient(90deg, rgba(183, 31, 34, 0.96), rgba(255, 239, 226, 0.24));
-  border-radius: 999px;
-  transform: translateY(-0.24rem) rotate(-8deg) scaleX(0);
-  opacity: 0.98;
-  transform-origin: left center;
-  animation: flourishDraw 0.72s ease-out 0.52s forwards;
+  display: none;
 }
 
 .splashFlourishTail {
-  display: block;
-  width: 3.4rem;
-  height: 0.16rem;
-  margin-top: -0.06rem;
-  background: linear-gradient(90deg, rgba(183, 31, 34, 0.9), rgba(255, 239, 226, 0.4));
-  border-radius: 999px;
-  transform: translateX(22%) translateY(-0.55rem) rotate(14deg) scaleX(0);
-  opacity: 0.92;
-  transform-origin: left center;
-  animation: flourishTail 0.88s ease-out 0.94s forwards;
+  display: none;
 }
 
 .splashFlourishTail::after {
-  content: "";
-  position: absolute;
-  right: -0.65rem;
-  top: 0.05rem;
-  width: 0.85rem;
-  height: 0.12rem;
-  background: rgba(255, 239, 226, 0.95);
-  border-radius: 999px;
-  opacity: 0;
-  transform: translateX(-10%) rotate(-18deg) scaleX(0);
-  animation: flourishLoop 0.42s ease-out 1.72s forwards;
+  display: none;
 }
 
 .splashLogoMark {
@@ -869,24 +843,7 @@ a.secondary {
   }
 }
 
-@keyframes flourishDraw {
-  to {
-    transform: translateY(-0.24rem) rotate(-8deg) scaleX(1);
-  }
-}
 
-@keyframes flourishTail {
-  to {
-    transform: translateX(22%) translateY(-0.55rem) rotate(14deg) scaleX(1);
-  }
-}
-
-@keyframes flourishLoop {
-  to {
-    opacity: 1;
-    transform: translateX(0) rotate(-18deg) scaleX(1);
-  }
-}
 
 @keyframes float {
   to {
