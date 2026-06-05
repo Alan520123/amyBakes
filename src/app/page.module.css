@@ -712,42 +712,15 @@ a.secondary {
 }
 
 .splashFlourish {
-  display: block;
-  width: 4.8rem;
-  height: 0.18rem;
-  background: linear-gradient(90deg, rgba(183, 31, 34, 0.96), rgba(255, 239, 226, 0.24));
-  border-radius: 999px;
-  transform: translateY(-0.24rem) rotate(-8deg) scaleX(0);
-  opacity: 0.98;
-  transform-origin: left center;
-  animation: flourishDraw 0.72s ease-out 0.52s forwards;
+  display: none;
 }
 
 .splashFlourishTail {
-  display: block;
-  width: 3.4rem;
-  height: 0.16rem;
-  margin-top: -0.06rem;
-  background: linear-gradient(90deg, rgba(183, 31, 34, 0.9), rgba(255, 239, 226, 0.4));
-  border-radius: 999px;
-  transform: translateX(22%) translateY(-0.55rem) rotate(14deg) scaleX(0);
-  opacity: 0.92;
-  transform-origin: left center;
-  animation: flourishTail 0.88s ease-out 0.94s forwards;
+  display: none;
 }
 
 .splashFlourishTail::after {
-  content: "";
-  position: absolute;
-  right: -0.65rem;
-  top: 0.05rem;
-  width: 0.85rem;
-  height: 0.12rem;
-  background: rgba(255, 239, 226, 0.95);
-  border-radius: 999px;
-  opacity: 0;
-  transform: translateX(-10%) rotate(-18deg) scaleX(0);
-  animation: flourishLoop 0.42s ease-out 1.72s forwards;
+  display: none;
 }
 
 .splashLogoMark {
@@ -870,24 +843,7 @@ a.secondary {
   }
 }
 
-@keyframes flourishDraw {
-  to {
-    transform: translateY(-0.24rem) rotate(-8deg) scaleX(1);
-  }
-}
 
-@keyframes flourishTail {
-  to {
-    transform: translateX(22%) translateY(-0.55rem) rotate(14deg) scaleX(1);
-  }
-}
-
-@keyframes flourishLoop {
-  to {
-    opacity: 1;
-    transform: translateX(0) rotate(-18deg) scaleX(1);
-  }
-}
 
 @keyframes float {
   to {
