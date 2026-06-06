@@ -8,6 +8,37 @@
             "/images/Cakes/onDisplay/816D2A2C-B6FA-4461-93CD-3FAF32D66728.jpg",
             "/images/Cakes/onDisplay/7878703757579059816.jpg",
             "/images/Cakes/onDisplay/B450C35F-9D1F-4D65-93AE-22ECE91064B3.jpg"
+        ],
+        "galleryImages": [
+            "/images/Cakes/2E77FE51-3661-411E-840E-EB261DB193E4.jpg",
+            "/images/Cakes/7878703757579059816.jpg",
+            "/images/Cakes/816D2A2C-B6FA-4461-93CD-3FAF32D66728.jpg",
+            "/images/Cakes/B450C35F-9D1F-4D65-93AE-22ECE91064B3.jpg",
+            "/images/Cakes/F9BD9549-144B-442A-8D3A-D8B5AEC62194.jpg",
+            "/images/Cakes/IMG_0206.jpg",
+            "/images/Cakes/IMG_0445.jpg",
+            "/images/Cakes/IMG_1432.jpg",
+            "/images/Cakes/IMG_1476.jpg",
+            "/images/Cakes/IMG_1509.jpg",
+            "/images/Cakes/IMG_1597.jpg",
+            "/images/Cakes/IMG_1655.jpg",
+            "/images/Cakes/IMG_1661.jpg",
+            "/images/Cakes/IMG_1815.jpg",
+            "/images/Cakes/IMG_2113.jpg",
+            "/images/Cakes/IMG_2448.jpg",
+            "/images/Cakes/IMG_2788.jpg",
+            "/images/Cakes/IMG_3047.jpg",
+            "/images/Cakes/IMG_3390.jpg",
+            "/images/Cakes/IMG_3403.jpg",
+            "/images/Cakes/IMG_3639.jpg",
+            "/images/Cakes/IMG_3715.jpg",
+            "/images/Cakes/IMG_4288.jpg",
+            "/images/Cakes/IMG_4355.jpg",
+            "/images/Cakes/IMG_4358.jpg",
+            "/images/Cakes/IMG_4611.jpg",
+            "/images/Cakes/IMG_5327.jpg",
+            "/images/Cakes/IMG_5436.jpg",
+            "/images/Cakes/IMG_6177.jpg"
         ]
     },
     {
@@ -19,6 +50,15 @@
             "/images/Cookies/onDisplay/IMG_1207.jpg",
             "/images/Cookies/onDisplay/IMG_5047.jpg",
             "/images/Cookies/onDisplay/IMG_5062.jpg"
+        ],
+        "galleryImages": [
+            "/images/Cookies/FBB60673-5733-4A72-A263-2ABEC14973DA.jpg",
+            "/images/Cookies/IMG_1207.jpg",
+            "/images/Cookies/IMG_5047.jpg",
+            "/images/Cookies/IMG_5062.jpg",
+            "/images/Cookies/IMG_6213.jpg",
+            "/images/Cookies/IMG_6215.jpg",
+            "/images/Cookies/IMG_6226.jpg"
         ]
     },
     {
@@ -30,6 +70,14 @@
             "/images/Cupcakes/onDisplay/IMG_2520.jpg",
             "/images/Cupcakes/onDisplay/IMG_2737.jpg",
             "/images/Cupcakes/onDisplay/IMG_4245.jpg"
+        ],
+        "galleryImages": [
+            "/images/Cupcakes/IMG_1850.jpg",
+            "/images/Cupcakes/IMG_2520.jpg",
+            "/images/Cupcakes/IMG_2737.jpg",
+            "/images/Cupcakes/IMG_4245.jpg",
+            "/images/Cupcakes/IMG_5470.jpg",
+            "/images/Cupcakes/IMG_5773.jpg"
         ]
     },
     {
@@ -41,6 +89,13 @@
             "/images/Other/onDisplay/IMG_1130.jpg",
             "/images/Other/onDisplay/IMG_3984.jpg",
             "/images/Other/onDisplay/IMG_4520.jpg"
+        ],
+        "galleryImages": [
+            "/images/Other/IMG_1066.jpg",
+            "/images/Other/IMG_1130.jpg",
+            "/images/Other/IMG_3984.jpg",
+            "/images/Other/IMG_4520.jpg",
+            "/images/Other/IMG_4905.jpg"
         ]
     }
 ]
