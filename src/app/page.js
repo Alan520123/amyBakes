@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "./page.module.css";
@@ -123,7 +124,9 @@ export default function Home() {
                 ))}
               </Carousel>
             </div>
-            <button className={styles.sectionButton}>View {section.name}</button>
+            <Link className={styles.sectionButton} href={`/gallery/${encodeURIComponent(section.id)}`}>
+              View {section.name}
+            </Link>
           </section>
           ))
         }
